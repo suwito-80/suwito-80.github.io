@@ -1,0 +1,21 @@
+	<!--   Core JS Files   -->
+
+    <script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/bootstrap.min.js"  | prepend: site.baseurl }}" type="text/javascript"></script>
+	<script src="{{ "/assets/js/material.min.js" | prepend: site.baseurl }}"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="{{ "/assets/js/nouislider.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="{{ "/assets/js/bootstrap-datepicker.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="{{ "/assets/js/material-kit.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			$(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+		});
+	</script>

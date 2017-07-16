@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="profile-page">
+    {% include header.html %}
+    <div class="wrapper">
+        <div class="header header-filter" style="background-image: url('assets/img/no_images.jpg');">
+
+        </div>
+
+        <div class="main main-raised">
+          {{ content }}
+        </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+  {% include script.html %}
+</html>
