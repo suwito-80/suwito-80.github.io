@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="Copyright" content="Suwito. Saputro" />
+	<meta name="robots" content="index, follow" />
+    <meta name="description" content="Log In Panel" />
+    <meta name="author" content="Wito" />
+    <meta name="language" content="Indonesia" />
+    <meta name="revisit-after" content="7" />
+    <meta name="webcrawlers" content="all" />
+    <meta name="rating" content="general" />
+    <meta name="spiders" content="all" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+    <!--[if gt IE 8]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <title>Under Maintenance</title>
+    <link rel="shortcut icon" href="<?=DIR_INC;?>/images/favicon.png" />
+
+	<script type="text/javascript" src="<?=DIR_INC;?>/js/jquery/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="<?=DIR_INC;?>/js/bootstrap/bootstrap.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style>
+		body { 
+		        background-color: #00ECB9; 
+		        text-align: center; 
+		        padding: 150px 30px; 
+		    
+		}
+		h1 { 
+        	font-family: cambria;
+		      letter-spacing: -1px; 
+		      line-height: 60px; 
+		      font-size: 40px; 
+              color: #396;
+              margin: 40px 0px 20px;
+		    
+		}
+		body { font: 20px "cambria", Helvetica, Arial, sans-serif; color: #666666; }
+		article { display: block; text-align: left; margin: 0 auto; }
+		a { color: #4183c4; text-decoration: none; }
+		a:hover { color: #666666; text-decoration: none; }
+		.text-small { font-size: 18px; }
+
+        #clockdiv{
+        	font-family: cambria;
+        	color: #fff;
+        	display: inline-block;
+        	font-weight: 100;
+        	text-align: center;
+        	font-size: 30px;
+        }
+        
+        #clockdiv > div{
+        	padding: 10px;
+        	border-radius: 3px;
+        	background: #00BF96;
+        	display: inline-block;
+        }
+        
+        #clockdiv div > span{
+        	padding: 15px;
+        	border-radius: 3px;
+        	background: #00816A;
+        	display: inline-block;
+        }
+        
+        .smalltext{
+        	padding-top: 5px;
+        	font-size: 16px;
+        }
+	</style>
+</head>
+<body>
+	<article class="col-md-8 col-md-offset-2 text-center">
+		<h1>We&rsquo;ll be back soon!</h1>
+        <div id="clockdiv">
+          <div>
+            <span class="days"></span>
+            <div class="smalltext">Hari</div>
+          </div>
+          <div>
+            <span class="hours"></span>
+            <div class="smalltext">Jam</div>
+          </div>
+          <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Menit</div>
+          </div>
+          <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+          </div>
+        </div>
+        <p></p>
+        <p></p>
+		<div>
+			<p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:<?=$core->posetting[5]['value'];?>">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
+			<p class="text-small">&mdash; <?=$core->posetting[0]['value'];?></p>
+		</div>
+	</article>
+	<!-- Countdown.js -->
+    <script src="<?=DIR_INC;?>/js/countdown/countdown.js"></script>
+</body>
+</html>
